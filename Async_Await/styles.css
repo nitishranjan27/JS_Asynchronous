@@ -1,0 +1,170 @@
+/* Base styling */
+/* Setting the font family and background gradient */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    /* Centering content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removing default margin */
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    /* Background color with transparency */
+    background-color: #d9515187;
+    padding: 20px 40px; /* Padding for inner content */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    width: 90%; /* Taking 90% of the parent width */
+    max-width: 700px;
+    overflow-y: auto; /* Vertical scroll for overflow */
+    max-height: 80vh; 
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Heading styling */
+h1 {
+    color: #064f9e; 
+    font-size: 2em; 
+    margin-bottom: 20px; 
+}
+
+/* Button styling with hover animation */
+button {
+    padding: 12px 25px; 
+    margin-top: 20px; 
+    border: none;
+    border-radius: 5px; 
+    background-color: #2d1dd4; 
+    color: white; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for smooth hover effect */
+}
+
+button:hover {
+    background-color: #1e098e; 
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow on hover */
+}
+
+/* Content styling */
+.content {
+    margin-top: 20px; 
+    text-align: left; /* Aligning text to the left */
+    font-size: 16px;
+    line-height: 1.5; 
+    color: #555; 
+}
+
+/* Post styling with animation */
+.post {
+    margin-bottom: 20px; 
+    padding: 15px; 
+    border-radius: 5px; 
+    background-color: #f3baba40; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+    transform: translateY(20px); /* Initial position */
+    opacity: 0; /* Initial opacity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+}
+
+.post h2 {
+    margin: 0 0 10px; 
+    font-size: 1.5em; 
+    color: #620202; 
+}
+
+.post p {
+    margin: 0; /* Removing default paragraph margin */
+    color: #713636;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Starting opacity */
+        transform: scale(0.95); /* Starting scale */
+    }
+    to {
+        opacity: 1; /* Ending opacity */
+        transform: scale(1); /* Ending scale */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Starting opacity */
+        transform: translateY(20px); /* Starting position */
+    }
+    to {
+        opacity: 1; /* Ending opacity */
+        transform: translateY(0); /* Ending position */
+    }
+}
+
+/* Responsive Design */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 15px 20px; /* Reduced padding */
+        max-width: 100%; /* Full width */
+    }
+    
+    h1 {
+        font-size: 1.5em; /* Smaller font size */
+    }
+    
+    button {
+        padding: 10px 20px; /* Adjusted padding */
+        font-size: 14px; /* Smaller font size */
+    }
+    
+    .content {
+        font-size: 14px; /* Smaller font size */
+    }
+    
+    .post {
+        padding: 10px; /* Adjusted padding */
+    }
+    
+    .post h2 {
+        font-size: 1.2em; /* Smaller font size */
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 18px 30px; /* Slightly reduced padding */
+        max-width: 90%; /* Almost full width */
+    }
+    
+    h1 {
+        font-size: 1.75em; /* Slightly smaller font size */
+    }
+    
+    button {
+        padding: 11px 23px; /* Adjusted padding */
+        font-size: 15px; /* Slightly smaller font size */
+    }
+    
+    .content {
+        font-size: 15px; /* Slightly smaller font size */
+    }
+    
+    .post {
+        padding: 12px; /* Adjusted padding */
+    }
+    
+    .post h2 {
+        font-size: 1.35em; /* Slightly smaller font size */
+    }
+}

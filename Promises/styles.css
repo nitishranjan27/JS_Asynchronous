@@ -1,0 +1,89 @@
+/* Style for the entire body of the document */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Hides overflow */
+}
+
+/* Style for the container div */
+.container {
+    background: #7494d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto; /* Vertical scrollbar if needed */
+    transform: scale(0); /* Initial scale (hidden) */
+    animation: scaleIn 0.5s forwards; /* Scale-in animation */
+}
+
+/* Keyframes for scaling in the container */
+@keyframes scaleIn {
+    to {
+        transform: scale(1);
+    }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: translateY(-3px); /* Slight upward movement */
+}
+
+.result {
+    font-size: 18px;
+    color: #333;
+    white-space: pre-wrap; /* Preserve whitespace for JSON display */
+    transition: opacity 0.3s; /* Smooth opacity transition */
+}
+.head{
+    font-size: 27px;
+    font-weight: bold;
+    color: #0c0096;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%); /* Initial position (off-screen) */
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+    opacity: 0; /* Initial opacity (hidden) */
+}
+
+/* Delays for each post's slide-in animation */
+.post:nth-child(1) { animation-delay: 0.1s; }
+.post:nth-child(2) { animation-delay: 0.2s; }
+.post:nth-child(3) { animation-delay: 0.3s; }
+.post:nth-child(4) { animation-delay: 0.4s; }
+.post:nth-child(5) { animation-delay: 0.5s; }
+
+/* Keyframes for sliding in the posts */
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* Final position */
+        opacity: 1; /* Final opacity */
+    }
+}

@@ -1,0 +1,90 @@
+/* Set font family and background gradient for the body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #b988d5, #ab7a30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Style for the container */
+.container {
+    text-align: center;
+    background-color: #6bf9da96; /* Semi-transparent background color */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    max-width: 90%;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    max-height: 88%; /* Limit maximum height */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Keyframe animation for fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Move element up */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move element to its original position */
+    }
+}
+
+/* Style for the main heading */
+.main-heading {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 0.8s ease-in-out; /* Apply fade-in animation */
+}
+
+/* Style for the callback button */
+.callback-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and scaling */
+}
+
+/* Hover style for the callback button */
+.callback-btn:hover {
+    background-color: #0056b3; /* Darken background color on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Style for the result container */
+.result-container {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #180101b0; /* Semi-transparent text color */
+    text-align: left;
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+}
+
+/* Style for heading inside result container */
+.result-container h2 {
+    color: #2b07ffba; /* Semi-transparent heading color */
+}
+
+/* Style for paragraphs inside result container */
+.result-container p {
+    padding: 8px;
+    background-color: #608f6e1c; /* Semi-transparent background color */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+/* Hover style for paragraphs inside result container */
+.result-container p:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
