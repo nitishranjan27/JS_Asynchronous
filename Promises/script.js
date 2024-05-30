@@ -16,7 +16,7 @@ document.getElementById('fetchButton').addEventListener('click', () => {
             .then(response => response.json()) // Parse the JSON response
             .then(data => {
                 clearTimeout(timeout); // Clear the timeout if the fetch is successful
-                resolve(data); // Resolve the promise with the fetched data
+                resolve(data); // Resolve the promise with the fetched Data
             })
             .catch(error => {
                 clearTimeout(timeout); // Clear the timeout if there is an error

@@ -17,9 +17,9 @@ function executeCallbackWithDelay(callback) {
     setTimeout(callback, 5000);
 }
 
-// Function to fetch data from the API
+// Function to fetch Data from the API
 function fetchData() {
-    fetch('https://dummyjson.com/posts') // Fetch data from the specified API endpoint
+    fetch('https://dummyjson.com/posts') // Fetch Data from the specified API endpoint
         .then(response => response.json())  // Parse the response as JSON
         .then(data => {
             const posts = data.posts;

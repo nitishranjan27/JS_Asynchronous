@@ -20,7 +20,7 @@ body {
     max-width: 90%;
     overflow-y: auto; /* Enable vertical scrolling if needed */
     max-height: 88%; /* Limit maximum height */
-    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in Animation */
 }
 
 /* Keyframe animation for fading in */

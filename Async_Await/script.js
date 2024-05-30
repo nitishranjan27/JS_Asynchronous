@@ -17,7 +17,7 @@ async function fetchData() {
         }
         // Parsing the response as JSON
         const data = await response.json();
-        // Displaying the fetched data
+        // Displaying the fetched Data
         displayData(data);
     } catch (error) {
         // Handling errors
@@ -25,7 +25,7 @@ async function fetchData() {
     }
 }
 
-// Function to display the fetched data on the webpage
+// Function to display the fetched Data on the webpage
 function displayData(data) {
     const contentDiv = document.getElementById('content');
     // Clearing previous content

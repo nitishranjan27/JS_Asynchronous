@@ -72,7 +72,7 @@ button:hover {
     transform: translateY(20px); /* Initial position */
     opacity: 0; /* Initial opacity */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-    animation: slideIn 0.5s forwards; /* Slide-in animation */
+    animation: slideIn 0.5s forwards; /* Slide-in Animation */
 }
 
 .post h2 {
@@ -82,7 +82,7 @@ button:hover {
 }
 
 .post p {
-    margin: 0; /* Removing default paragraph margin */
+    margin: 0; /* Removing default Paragraph margin */
     color: #713636;
 }
 

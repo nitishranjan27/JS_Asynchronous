@@ -22,7 +22,7 @@ body {
     max-height: 90vh;
     overflow-y: auto; /* Vertical scrollbar if needed */
     transform: scale(0); /* Initial scale (hidden) */
-    animation: scaleIn 0.5s forwards; /* Scale-in animation */
+    animation: scaleIn 0.5s forwards; /* Scale-in Animation */
 }
 
 /* Keyframes for scaling in the container */
